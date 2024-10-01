@@ -1,0 +1,19 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Hello TaskController!
+{% endblock %}
+
+{% block header %}
+	<h1>
+		{{ "nouveau projet"|capitalize }}
+	</h1>
+{% endblock %}
+
+{% block body %}
+	{{ form_start(form) }}
+	{{ form_row(form.title, {'label': 'Titre du projet'}) }}
+	{{ form_row(form.members, {'label': 'Inviter des membres'} ) }}
+	<button class="button button-submit">Continuer</button>
+	{{ form_end(form) }}
+
+{% endblock %}

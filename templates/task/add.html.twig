@@ -1,0 +1,17 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Hello TaskController!
+{% endblock %}
+
+{% block header %}
+	<h1>
+		{{ "Créer une tâche"|capitalize }}
+	</h1>
+{% endblock %}
+
+{% block body %}
+	{{ form_start(form) }}
+	{{ form_widget(form) }}
+	<button class="button button-submit">Continuer</button>
+	{{ form_end(form) }}
+{% endblock %}
